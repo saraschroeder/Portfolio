@@ -3,8 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Sara Schroeder Portfolio Website</title>
+    <link rel="stylesheet" href="https://cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">My Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+       <!-- Introduction -->
+       <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Sara Schroeder</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Full-Stack Developer</p>
+        <img src="images/Sara.jpg" alt="a picture of Sara Schroeder smiling">
+    </section>
 
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Ex</h3>
+                    <p>I build responsive, user-friendly web applications using a variety of front-end technologies such as HTML, CSS, JavaScript, and React. I am comfortable working with RESTful APIs and Node.js to develop server-side functionality, and have experience with databases such as MongoDB and MySQL.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Ex</h3>
+                    <p>I am passionate about learning new technologies and read tech blogs to stay up-to-date with the latest trends in full stack development.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Ex</h3>
+                    <p>I am committed to creating accessible and inclusive web applications that meet the needs of all users. I have experience implementing accessibility best practices, such as semantic HTML, ARIA attributes, and keyboard navigation, and am familiar with tools such as Wave and Lighthouse for testing accessibility. I am also dedicated to creating responsive designs that work well on all devices and screen sizes.</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+        
+        </section>
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Full-Stack Developer</p>
+            
+            <div class="about-me__body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+         </section>
+         
+         <!-- My Projects -->
+         <section class="my-projects" id="projects">
+             <h2 class="section__title section__title--projects">My Projects</h2>
+             <p class="section__subtitle section__subtitle"></p>
+             
+             <div class="portfolio">
+                 <!-- Portfolio item 01 -->
+                 <a href="#" class="portfolio__item">
+                     <img src="./images/image1.jpeg" alt="" class="portfolio__img">
+                 </a>
+                 
+                 <!-- Portfolio item 02 -->
+                 <a href="#" class="portfolio__item">
+                     <img src="./images/image2.jpeg" alt="" class="portfolio__img">
+                 </a>
+                 
+                 <!-- Portfolio item 03 -->
+                 <a href="#" class="portfolio__item">
+                     <img src="./images/image3.jpeg" alt="" class="portfolio__img">
+                 </a>
+                 
+                 <!-- Portfolio item 04 -->
+                 <a href="#" class="portfolio__item">
+                     <img src="./images/image4.jpeg" alt="" class="portfolio__img">
+                 </a>
+             </div>
+         </section>
+
+         <!-- Footer -->
+            <footer class="footer">
+                <h2 class="section__title section__title--projects">Connect With Me!</h2>
+                <h4>Email:</h4>
+                <a href="sara.schroeder00@gmail.com" class="footer__link">sara.schroeder00@gmail.com</a>
+                <h4>Phone:</h4>
+                <a href="612-991-2366" class="footer__link">612-991-2366</a>
+                <ul class="social-list">
+                    <li class="social-list__item"><a class="social-list__link" href="https://github.com">
+                        <i class="fa-brands fa-github"></i></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="http://linkedin.com">
+                        <i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </footer>
+            <script src="./js/index.js"></script>
 </body>
 </html>
