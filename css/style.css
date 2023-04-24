@@ -37,6 +37,10 @@
 
 /* General styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -119,6 +123,12 @@ h3 { font-size: var(--fs-h3) }
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+}
+
+.section__subtitle--projects {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
 }
 
 
@@ -327,30 +337,18 @@ header {
     max-width: 1000px;
     margin: 0 auto;
 }
-
-@media (min-width: 600px) {
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-    }
     
-    .section__title--about {
-        grid-area: title;
-    }
+.section__title--about {
+     grid-area: title;
+ }
     
-    .section__subtitle--about {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        left: -1em;
-        width: calc(100% + 2em);
+  .section__subtitle--about {
+     grid-column: 1 / -1;
+     grid-row: 2;
+     left: -1em;
+     width: calc(100% + 2em);
 
-    }
-}
+ }
 
 /* My Projects */
 
@@ -360,14 +358,9 @@ header {
     text-align: center;    
 }
 
-.section__subtitle--projects {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-}
-
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .portfolio__item {
@@ -434,4 +427,18 @@ header {
 
 .social-list__link {
     padding: .5em;
+}
+
+/* Individual portfolio item styles */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
