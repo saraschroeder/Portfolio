@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -35,8 +34,6 @@
     }
 }
 
-/* General styles */
-
 html {
     scroll-behavior: smooth;
 }
@@ -66,8 +63,6 @@ strong { font-weight: var(--fw-bold) }
     outline-offset: 3px;
 }
 
-/* Buttons */
-
 .btn {
     display: inline-block;
     padding: .5em 2.5em;
@@ -85,8 +80,6 @@ strong { font-weight: var(--fw-bold) }
 .btn:hover {
     transform: scale(1.1);
 }
-
-/* Typography */
 
 h1,
 h2,
@@ -130,9 +123,6 @@ h3 { font-size: var(--fs-h3) }
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
-
-
-/* header */
 
 header {
     display: flex;
@@ -240,7 +230,6 @@ header {
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
 
-/*  Intro section  */
 
 .intro {
     position: relative;
@@ -283,10 +272,6 @@ header {
         width: calc(100% + 1.5em);
     }
 }
-
-
-
-/*  My services section  */
 
 .my-services {
     background-color: var(--clr-dark);
@@ -352,7 +337,6 @@ header {
 
  }
 
-/* My Projects */
 
 .my-projects {
     background-color: var(--clr-dark);
@@ -388,7 +372,7 @@ header {
     opacity: .5;
 }
 
-/* footer */
+
 
 .footer {
     color: var(--clr-accent);
@@ -414,7 +398,7 @@ header {
     text-decoration: underline;
 }
 
-/* Individual portfolio item styles */
+
 
 .portfolio-item-individual {
     padding: 0 2em 2em;
